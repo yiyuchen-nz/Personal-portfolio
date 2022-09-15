@@ -2,7 +2,16 @@
 module.exports = {
   content: ['./pages/**/*.tsx', './components/**/*.tsx'],
   theme: {
-    extend: {},
+    fontFamily: {
+      Poppins: ['Poppins'],
+    },
+    extend: {
+      colors: {
+        green: {
+          DEFAULT: '#00f260',
+        },
+      },
+    },
   },
   plugins: [],
 }
