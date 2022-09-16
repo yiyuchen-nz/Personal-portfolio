@@ -7,8 +7,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        green: {
-          DEFAULT: '#00f260',
+        blue: {
+          DEFAULT: '#6C98C6',
+        },
+        butter: {
+          DEFAULT: '#F3F0E2',
+        },
+        darkBlue: {
+          DEFAULT: '#285880',
         },
       },
     },
