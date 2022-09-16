@@ -1,4 +1,4 @@
-
+import {services}from'../data'
 
 const index = () => {
   return(
