@@ -14,10 +14,7 @@ const resume = () => {
           <p className="my-3">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</p>
         </div>
       </div>
-    </div>
-
     {/* languages and tools */}
-    <div className="grid gap-6 md:grid-cols-2">
       <div>
         <h5 className="my-3 text-2xl font-bold">Education</h5>
         <div>
@@ -29,6 +26,8 @@ const resume = () => {
         </div>
       </div>
     </div>
+
+
     </div>
   )
 }
