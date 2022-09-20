@@ -89,7 +89,7 @@ export const projects:IProject[]= [{
   image_path: "/images/smiling-spaceship.png",
   deployed_url: "https://yiyuchen-nz.github.io/dev-invaders/",
   github_url:"https://github.com/yiyuchen-nz/dev-invaders",
-  category: ['Phaser3'],
+  category: ['react'],
   key_techs: ["phaser3", "Javascript"]
 },{
   name: "Dev invaders",
@@ -97,7 +97,7 @@ export const projects:IProject[]= [{
   image_path: "/images/smiling-spaceship.png",
   deployed_url: "https://yiyuchen-nz.github.io/dev-invaders/",
   github_url:"https://github.com/yiyuchen-nz/dev-invaders",
-  category: ['Phaser3'],
+  category: ['react'],
   key_techs: ["phaser3", "Javascript"]
 }
 ]
