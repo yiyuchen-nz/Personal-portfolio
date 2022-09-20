@@ -3,9 +3,16 @@ import{GoLocation} from "react-icons/go"
 import{BsKeyboard, BsToggleOff}from"react-icons/bs"
 import{AiOutlineMail}from"react-icons/ai"
 import{HiDocumentDownload} from"react-icons/hi"
-
+import{useTheme}from "next-themes"
 
 const Sidebar = () => {
+
+  const {theme, setTheme} = useTheme()
+
+  const changeTheme =()=>{
+    setTheme(theme === "light"? "dark": "light")
+  }
+
   return (
     <div>
       <img src="https://content.omlet.co.uk/images/cache/819/1024/Cat-Ragdoll-A_young_brown_pointed_Ragdoll_Cat.webp" alt="profile picture" className="w-32 h-auto mx-auto rounded-full"/>
@@ -51,8 +58,8 @@ const Sidebar = () => {
         {/* theme */}
         <div className="flex items-center justify-center my-4 rounded-full bg-blue text-butter ">
         <BsToggleOff/>
-        <button className="px-2 my-1" >
-        Theme
+        <button className="px-2 my-1" onClick={changeTheme}>
+       Theme
         </button>
         </div>
 
