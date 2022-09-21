@@ -10,10 +10,13 @@ import { stagger,fadeInUp } from "../animations";
 
 
 const ProjectCard:FunctionComponent<{
-  project:IProject;
+  project:IProject,
+  showDetail:null|number;
+  setShowDetail:(id: null|number)=>void
 }> = ({
 
   project:{
+    id,
     name,
     description,
     image_path,
@@ -21,17 +24,18 @@ const ProjectCard:FunctionComponent<{
     github_url,
     key_techs,
     category
-  }
+  },
+  showDetail,
+  setShowDetail
 }) => {
 
-  const [showDetail, setShowDetail]=useState(false)
 
   return (
     <div>
-      <Image src={image_path} alt={name} className="cursor-pointer" onClick={()=>setShowDetail(true)} width="300" height="200" layout="responsive"/>
+      <Image src={image_path} alt={name} className="cursor-pointer" onClick={()=>setShowDetail(id)} width="300" height="200" layout="responsive"/>
       <p className="my-2 text-center" >{name}</p>
-{ showDetail && (
-      <div className="absolute top-0 left-0 z-10 grid w-full h-auto grid-cols-2 p-2 md:grid-cols-2 md: gap-x-12 text-blue bg-butter dark:text-butter dark:bg-black">
+{ showDetail === id && (
+      <div className="absolute top-0 left-0 z-10 grid w-full h-auto grid-cols-2 p-2 rounded-lg md:p-10 md:grid-cols-2 md: gap-x-12 text-blue bg-butter dark:text-butter dark:bg-black">
 
         <motion.div 
         variants={stagger}
@@ -41,7 +45,8 @@ const ProjectCard:FunctionComponent<{
           
           {/* <img src={image_path} alt="name" /> */}
          <motion.div
-         variants={fadeInUp }>
+         variants={fadeInUp }
+         className="border-4 border-gray-100">
           <Image src={image_path} alt={name}  width="300" height="200" layout="responsive"/> 
 
          <div className="flex justify-center my-4 space-x-3">
@@ -69,7 +74,7 @@ const ProjectCard:FunctionComponent<{
           </div>
         </div>
 
-        <button onClick={()=>setShowDetail(false)}
+        <button onClick={()=>setShowDetail(null)}
         className="absolute bg-black rounded-full top-3 right-3 focus:outline-none dark:bg-butter "
         >
           <MdClose size={30}/>

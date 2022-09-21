@@ -11,6 +11,7 @@ import {stagger, fadeInUp, routeAnimation} from "../animations"
 const Projects = () => {
   const[projects, setProjects] =useState(projectsData)
   const[active, setActive] = useState("all")
+  const [showDetail, setShowDetail]=useState<number | null>(null)
 
   const handleFilterCategory = (category: Category | "all") =>{
     if(category === "all"){
@@ -43,7 +44,7 @@ const Projects = () => {
           variants={fadeInUp}
           key={project.name} 
           className="col-span-12 p-2 bg-gray-200 rounded-sm sm:col-span-6 lg:col-span-4 dark:bg-black">
-            <ProjectCard project={project}/>
+            <ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail}/>
           </motion.div>
         ))}
       </motion.div>

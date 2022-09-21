@@ -66,6 +66,7 @@ export const languages: ISkill[]=[
 ]
 
 export const projects:IProject[]= [{
+  id:1,
   name: "Dev invaders",
   description:"This was the final project of boot camp.",
   image_path: "/images/smiling-spaceship.png",
@@ -75,6 +76,7 @@ export const projects:IProject[]= [{
   key_techs: ["phaser3", "Javascript"]
 },
 {
+  id:2,
   name: "Dev invaders",
   description:"This was the final project of boot camp.",
   image_path: "/images/smiling-spaceship.png",
@@ -84,6 +86,7 @@ export const projects:IProject[]= [{
   key_techs: ["phaser3", "Javascript"]
 },
 {
+  id:3,
   name: "Dev invaders",
   description:"This was the final project of boot camp.",
   image_path: "/images/smiling-spaceship.png",
@@ -92,6 +95,7 @@ export const projects:IProject[]= [{
   category: ['react'],
   key_techs: ["phaser3", "Javascript"]
 },{
+  id:4,
   name: "Dev invaders",
   description:"This was the final project of boot camp.",
   image_path: "/images/smiling-spaceship.png",
