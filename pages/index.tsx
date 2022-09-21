@@ -3,13 +3,18 @@ import ServiceCard from '../components/ServiceCard';
 import {services}from'../data'
 
 import{motion} from"framer-motion"
-import { fadeInUp, stagger } from '../animations';
+import { fadeInUp, stagger,routeAnimation } from '../animations';
 
 
 const index = () => { 
   
   return(
-    <div className='flex flex-col flex-grow px-6 pt-1'>
+    <motion.div 
+    variants={routeAnimation}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    className='flex flex-col flex-grow px-6 pt-1'>
         <h5 className='my-3 font-medium'>Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.</h5>
         <div className='flex-grow p-4 mt-5 bg-blue' style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
           <h6 className='my-3 text-xl font-bold tracking-wide'>What I offer</h6>
@@ -28,7 +33,7 @@ const index = () => {
             ))}
           </motion.div>
         </div>
-    </div>
+    </motion.div>
   ) 
 }
 export default index  

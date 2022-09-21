@@ -18,3 +18,23 @@ export const stagger ={
     }
   }
 }
+
+export const routeAnimation={
+  initial:{
+    opacity:0
+  },
+  animate:{
+    opacity:1,
+    transition:{
+      delay:0.1,
+      duration:0.2
+    }
+  },
+  exit:{
+    opacity:1,
+    transition:{
+      daley:0.1,
+      ease:"easeInOut"
+    }
+  }
+}
