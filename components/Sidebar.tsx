@@ -5,6 +5,8 @@ import{AiOutlineMail}from"react-icons/ai"
 import{HiDocumentDownload} from"react-icons/hi"
 import{useTheme}from "next-themes"
 
+import Image from "next/image"
+
 const Sidebar = () => {
 
   const {theme, setTheme} = useTheme()
@@ -15,7 +17,7 @@ const Sidebar = () => {
 
   return (
     <div>
-      <img src="https://content.omlet.co.uk/images/cache/819/1024/Cat-Ragdoll-A_young_brown_pointed_Ragdoll_Cat.webp" alt="profile picture" className="w-32 h-auto mx-auto rounded-full"/>
+      <Image src="https://content.omlet.co.uk/images/cache/819/1024/Cat-Ragdoll-A_young_brown_pointed_Ragdoll_Cat.webp" alt="profile picture" className="w-32 h-auto mx-auto rounded-full" layout="intrinsic" height={200} width="150"/>
       <h3 className="my-4 text-3xl font-medium tracking-wider font-Poppins">
         <span className="font-bold text-darkBlue">Yiyu </span>
         Chen
