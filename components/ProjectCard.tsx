@@ -78,7 +78,7 @@ const ProjectCard:FunctionComponent<{
         </motion.div>
 
         <button onClick={()=>setShowDetail(null)}
-        className="absolute bg-black rounded-full top-3 right-3 focus:outline-none dark:bg-butter "
+        className="absolute bg-black rounded-full top-3 right-3 focus:outline-none dark:bg-butter dark:text-black"
         >
           <MdClose size={30}/>
         </button>
