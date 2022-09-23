@@ -2,7 +2,6 @@ import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import{GoLocation} from "react-icons/go"
 import{ BsToggleOff}from"react-icons/bs"
 import{AiOutlineMail}from"react-icons/ai"
-import{HiDocumentDownload} from"react-icons/hi"
 import{useTheme}from "next-themes"
 
 import Image from "next/image"
@@ -24,7 +23,7 @@ const Sidebar = () => {
       </h3>
 
       {/* title & location */}
-      <div className="py-2 my-5 text-butter bg-blue dark:bg-gray-800" style={{marginLeft:'-1rem', marginRight:'-1rem'}}>
+      <div className="pb-2 my-5 bg-white text-darkBlue dark:bg-gray-800" style={{marginLeft:'-1rem', marginRight:'-1rem'}}>
         <div className="flex items-center justify-center space-x-2">
           <span>Software Developer</span>
         </div>
@@ -34,12 +33,18 @@ const Sidebar = () => {
         </div>
       </div>
 
+      {/* theme */}
+     <div className="flex items-center justify-center my-4 rounded-full bg-blue text-butter dark:bg-gray-800">
+        <BsToggleOff/>
+        <button className="px-2 my-1" onClick={changeTheme}>
+       {theme === "dark"? "Light Mode" : "Dark Mode"}
+        </button>
+        </div>
        {/* CV  */}
        <div className="flex items-center justify-center px-2 py-1 my-4 rounded-full bg-blue text-butter dark:bg-gray-800">
-       <HiDocumentDownload />
       <a href="/images/smiling-spaceship.png"
       download="smiling-spaceship.png">
-        Download CV
+        Download Resume
         </a>
         </div>
 
@@ -52,14 +57,6 @@ const Sidebar = () => {
         </div>
 
 
-        {/* theme */}
-        <div className="flex items-center justify-center my-4 rounded-full bg-blue text-butter dark:bg-gray-800">
-        <BsToggleOff/>
-        <button className="px-2 my-1" onClick={changeTheme}>
-       {theme === "dark"? "Light Mode" : "Dark Mode"}
-        </button>
-        </div>
-
       {/* {social icon} */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-blue md:w-full dark:text-butter">
         <a href="https://github.com/yiyuchen-nz">
@@ -69,6 +66,7 @@ const Sidebar = () => {
           <AiFillLinkedin className="w-8 h-8 cursor-pointer"/>
         </a>
       </div>
+
       
     </div>
   )

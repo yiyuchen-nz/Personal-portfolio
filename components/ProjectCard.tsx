@@ -35,7 +35,7 @@ const ProjectCard:FunctionComponent<{
       <Image src={image_path} alt={name} className="cursor-pointer" onClick={()=>setShowDetail(id)} width="300" height="200" layout="responsive"/>
       <p className="my-2 text-center" >{name}</p>
 { showDetail === id && (
-      <div className="absolute top-0 left-0 z-10 grid w-full h-auto grid-cols-2 p-2 rounded-lg md:p-10 md:grid-cols-2 md: gap-x-12 text-blue bg-butter dark:text-butter dark:bg-black">
+      <div className="absolute top-0 left-0 z-10 grid w-full h-auto grid-cols-2 p-2 rounded-lg md:p-10 md:grid-cols-2 md: gap-x-12 text-butter bg-blue dark:bg-black">
 
         <motion.div 
         variants={stagger}
@@ -51,11 +51,11 @@ const ProjectCard:FunctionComponent<{
           </motion.div> 
 
          <motion.div variants={fadeInUp }className="flex justify-center my-4 space-x-3">
-          <a href={github_url}className="flex px-4 py-2 space-x-3 text-lg bg-gray-100 item-center dark:bg-black">
-            <AiFillGithub/> <span>Github</span>
+          <a href={github_url}className="flex px-4 py-2 space-x-3 text-md text-butter item-center dark:bg-black">
+           <AiFillGithub className="w-6 h-6"/> <span>Github</span>
           </a>
-          <a href={deployed_url}className="flex px-4 py-2 space-x-3 text-lg bg-gray-100 item-center dark:bg-black">
-            <AiFillProject/> <span>Project</span>
+          <a href={deployed_url}className="flex px-4 py-2 space-x-3 text-md item-center dark:bg-black">
+            <AiFillProject className="w-6 h-6"/> <span>Project</span>
           </a>
           </motion.div> 
         </motion.div>
@@ -70,7 +70,7 @@ const ProjectCard:FunctionComponent<{
             {
               key_techs.map(tech=>
                 <span key={tech}
-                className="px-2 py-1 my-1 bg-gray-200 rounded-sm dark:bg-black">
+                className="px-2 py-1 my-1 bg-gray-200 rounded-sm text-blue dark:bg-black">
                   {tech}
                 </span>)
             }

@@ -22,4 +22,4 @@ export interface IProject{
   key_techs:string[]
 }
 
-export type Category = "react"| "node" |"express" | "Phaser3"
+export type Category = "React"| "JavaScript" |"express" | "Phaser3" | "TypeScript" 

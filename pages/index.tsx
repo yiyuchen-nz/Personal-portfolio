@@ -16,7 +16,9 @@ const index = () => {
     exit="exit"
     className='flex flex-col flex-grow px-6 pt-1 dark:bg-black'>
 
-        <h5 className='my-3 font-medium'>Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.Hi! This is all about me.
+        <h5 className='my-2 font-medium'>
+         Hello! Welcome to my portfolio. 
+         <br/>My name is Yiyu. I am a software developer. I recently graduated from the web development bootcamp of Dev Academy. I would love to make fun, user-friendly and delightful tools for people all across the world :-)
         </h5>
 
         <div className='flex-grow p-4 mt-5 bg-blue dark:bg-black dark:text-butter' style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>

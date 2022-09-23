@@ -17,9 +17,9 @@ const ProjectsNavBar:FunctionComponent<{handlerFilterCategory:Function, active:s
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <NavItem value="all" {...props}/>
-      <NavItem value="react" {...props}/>
-      <NavItem value="node" {...props}/>
-      <NavItem value="express" {...props}/>
+      <NavItem value="JavaScript" {...props}/>
+      <NavItem value="TypeScript" {...props}/>
+      <NavItem value="React" {...props}/>
       <NavItem value="Phaser3" {...props}/>
     </div>
   )

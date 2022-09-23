@@ -28,7 +28,7 @@ const Navbar =()=>{
   const{pathname}= useRouter()
 
   useEffect(()=>{
-    if(pathname === '/'){setActiveItem('About')}
+    if(pathname === '/'){setActiveItem('About Me')}
     if(pathname === '/projects'){setActiveItem('Projects')}
     if(pathname === '/education'){setActiveItem('Education')}
 
@@ -39,7 +39,7 @@ const Navbar =()=>{
   <div className="flex justify-between px-5 py-3 my-3 text-xl border-b-4">
     <span className="text-xl font-bold border-b-4 text-darkBlue border-darkBlue md:text-2xl">{activeItem}</span>
     <div className="flex space-x-5 text-lg ">
-      <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="About" route="/"/>
+      <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="About Me" route="/"/>
       <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Projects" route="/projects"/>
       <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Education" route="/education"/>
 
