@@ -1,7 +1,7 @@
 import {motion } from "framer-motion"
 import {routeAnimation} from "../animations"
 
-const resume = () => {
+const Education = () => {
   return (
     <motion.div 
     variants={routeAnimation}
@@ -41,4 +41,4 @@ const resume = () => {
   )
 }
 
-export default resume 
+export default Education
