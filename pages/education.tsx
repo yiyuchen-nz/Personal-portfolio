@@ -1,5 +1,5 @@
 import {motion } from "framer-motion"
-import {routeAnimation} from "../animations"
+import {routeAnimation, fadeInUp} from "../animations"
 
 const Education = () => {
   return (
@@ -11,30 +11,33 @@ const Education = () => {
     className="px-6 py-2"
     > 
     
-    {/* //education and experience */}
-    <div className="grid gap-6 md:grid-cols-2">
-      <div>
-        <h5 className="my-3 text-2xl font-bold">Education</h5>
-        <div>
-          <h5 className="my-2 text-xl font-bold ">
-            boot camp in EDA
-          </h5>
-          <p className="font-semibold">year(April 2022- July 2022)</p>
-          <p className="my-3">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</p>
-        </div>
-      </div>
-    {/* languages and tools */}
-      <div>
-        <h5 className="my-3 text-2xl font-bold">Education</h5>
-        <div>
-          <h5 className="my-2 text-xl font-bold ">
-            boot camp in EDA
-          </h5>
-          <p className="font-semibold">year(April 2022- July 2022)</p>
-          <p className="my-3">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</p>
-        </div>
-      </div>
-    </div>
+    {/* education */}
+    <motion.div  className="grid gap-6 md:grid-rows-3 text-darkBlue">
+      
+      <motion.div variants={fadeInUp} className="px-3 mb-1 bg-butter">
+        <motion.h5 variants={fadeInUp} className="my-3 text-xl font-bold">
+          Web Development Bootcamp
+          </motion.h5>
+          <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
+            Dev Academy Aotearoa
+          </motion.h5>
+          <motion.p className="text-xs">April 2022- July 2022</motion.p>
+          <motion.p className="my-3 ">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
+      
+      </motion.div>
+      <motion.div variants={fadeInUp} className="px-3 mb-1 bg-butter">
+        <motion.h5 variants={fadeInUp} className="my-3 text-xl font-bold">
+          Web Development Bootcamp
+          </motion.h5>
+          <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
+            Dev Academy Aotearoa
+          </motion.h5>
+          <motion.p className="text-xs">April 2022- July 2022</motion.p>
+          <motion.p className="my-3 ">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
+      
+      </motion.div>
+
+    </motion.div>
 
 
     </motion.div>

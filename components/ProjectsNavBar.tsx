@@ -20,7 +20,6 @@ const ProjectsNavBar:FunctionComponent<{handlerFilterCategory:Function, active:s
       <NavItem value="JavaScript" {...props}/>
       <NavItem value="TypeScript" {...props}/>
       <NavItem value="React" {...props}/>
-      <NavItem value="REST API" {...props}/>
       <NavItem value="Phaser3" {...props}/>
     </div>
   )

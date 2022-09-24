@@ -68,7 +68,7 @@ export const services:IService[] = [
 export const projects:IProject[]= [{
   id:1,
   name: "Dev Invaders",
-  description:"A very challenging side scrolling shooting game. This was the final project at the bootcamp in Dev Academy. It was made by 4 of us with 0 experience in game development within 7 days (and we managed to have a day off Sunday ; )",
+  description:"A 'very' challenging side scrolling shooting game. This was the final project at the bootcamp in Dev Academy. It was made by 4 of us with 0 experience in game development within 7 days (and we managed to have a day off Sunday ; )",
   image_path: "/images/dev_invaders.jpg",
   deployed_url: "https://yiyuchen-nz.github.io/dev-invaders/",
   github_url:"https://github.com/yiyuchen-nz/dev-invaders",
@@ -88,20 +88,20 @@ export const projects:IProject[]= [{
 {
   id:3,
   name: "Sweet As Yoga",
-  description:"This was the final project of boot camp.",
+  description:"This is a Yoga booking website our team made for our fav yoga instructor Sarah. We were sitting on yoga mats when presenting the project. Really a fun experience!",
   image_path: "/images/sweetAsYoga.jpg",
   deployed_url: null,
   github_url:"https://github.com/yiyuchen-nz/sweet-as-yoga",
-  category: ['React', "JavaScript", "REST API"],
-  key_techs: ["React", "JavaScript", "REST API"]
+  category: ['React', "JavaScript"],
+  key_techs: ["React", "JavaScript", "Knex js"]
 },{
   id:4,
   name: "A+ Budget Calendar",
-  description:"This was the final project of boot camp.",
+  description:"A budget tracking tool. ",
   image_path: "/images/budgetCalendar.jpg",
   deployed_url: null,
   github_url:"https://github.com/yiyuchen-nz/aplus-budget-calendar",
-  category: ['React'],
+  category: ['React', "JavaScript"],
   key_techs: ["React Router", "JavaScript"]
 }
 ]
