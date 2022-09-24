@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   return (
     <div >
-      <Image src="/images/profileImage.jpg" alt="profile picture" className="w-32 h-auto mx-auto rounded-lg " layout="intrinsic" height="250" width="250"/>
+      <Image src="/images/profile.jpg" alt="profile picture" className="w-32 h-auto mx-auto rounded-lg " layout="intrinsic" height="250" width="250"/>
       <h3 className="my-2 text-3xl font-medium tracking-wider font-Poppins">
         <span className="font-bold text-darkBlue">Yiyu </span>
         Chen
