@@ -12,29 +12,38 @@ const Education = () => {
     > 
     
     {/* education */}
-    <motion.div  className="grid gap-6 md:grid-rows-3 text-darkBlue">
+    <motion.div  className="grid gap-2 md:grid-rows-3 text-butter">
       
-      <motion.div variants={fadeInUp} className="px-3 mb-1 bg-butter">
-        <motion.h5 variants={fadeInUp} className="my-3 text-xl font-bold">
+      <motion.div variants={fadeInUp} className="px-3 bg-blue">
+        <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
           Web Development Bootcamp
           </motion.h5>
           <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
             Dev Academy Aotearoa
           </motion.h5>
           <motion.p className="text-xs">April 2022- July 2022</motion.p>
-          <motion.p className="my-3 ">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
-      
+          <motion.p className="my-1 text-sm">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
       </motion.div>
-      <motion.div variants={fadeInUp} className="px-3 mb-1 bg-butter">
-        <motion.h5 variants={fadeInUp} className="my-3 text-xl font-bold">
-          Web Development Bootcamp
+
+      <motion.div variants={fadeInUp} className="px-3 bg-blue">
+        <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
+          Postgraduate Diploma in International Hospitality Management
           </motion.h5>
           <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
-            Dev Academy Aotearoa
+            AUT
           </motion.h5>
-          <motion.p className="text-xs">April 2022- July 2022</motion.p>
-          <motion.p className="my-3 ">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
-      
+          <motion.p className="text-xs">February 2016- November 2016</motion.p>
+          <motion.p className="my-3 text-sm">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
+      </motion.div>
+
+      <motion.div variants={fadeInUp} className="px-3 bg-blue">
+        <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
+          Bachelor of Engineering
+          </motion.h5>
+          <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
+            Tianjin University of Technology
+          </motion.h5>
+          <motion.p className="my-3 text-sm">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
       </motion.div>
 
     </motion.div>
