@@ -1,69 +1,43 @@
-import { BsCircleFill } from 'react-icons/bs'
+import { BsSuitHeartFill} from 'react-icons/bs'
 import {RiComputerLine} from 'react-icons/ri'
-import {IProject, IService, ISkill} from'./type'
+import {IProject, IService} from'./type'
 
 export const services:IService[] = [
 
   {
-    title:"Frontend Dev",
-    about:"Hellooo!!!",
+    title:"Frontend Development",
+    about:"I can build SPA with HTML, CSS and React js.",
     Icon: RiComputerLine,
   },
   {
-    title:"Frontend Dev",
+    title:"Communication Skills",
     about:"Hellooo!!!",
+    Icon: BsSuitHeartFill,
+  },
+  {
+    title:"Backend Development",
+    about:"I have experience with data handling Express.js",
     Icon: RiComputerLine,
   },
   {
-    title:"Frontend Dev",
+    title:"Curious and fast learner",
+    about:"Learned Phaser3 to build a 2D game in 7 days",
+    Icon: BsSuitHeartFill,
+  },
+  {
+    title:"API Development",
     about:"Hellooo!!!",
     Icon: RiComputerLine,
   },
+
   {
-    title:"Frontend Dev",
+    title:"Team Player",
     about:"Hellooo!!!",
-    Icon: RiComputerLine,
+    Icon: BsSuitHeartFill,
   },
-  {
-    title:"Frontend Dev",
-    about:"Hellooo!!!",
-    Icon: RiComputerLine,
-  },
-  {
-    title:"Frontend Dev",
-    about:"Hellooo!!!",
-    Icon: RiComputerLine,
-  }
+
 ]
 
-// export const languages: ISkill[]=[
-//   {
-//   name: "JavaScript",
-//   level: "70%",
-//   Icon: BsCircleFill
-// },
-// {
-//   name: "JavaScript",
-//   level: "70%",
-//   Icon: BsCircleFill
-// },
-// {
-//   name: "JavaScript",
-//   level: "70%",
-//   Icon: BsCircleFill
-// },
-// {
-//   name: "JavaScript",
-//   level: "70%",
-//   Icon: BsCircleFill
-// },
-// {
-//   name: "JavaScript",
-//   level: "70%",
-//   Icon: BsCircleFill
-// },
-
-// ]
 
 export const projects:IProject[]= [{
   id:1,
@@ -102,6 +76,6 @@ export const projects:IProject[]= [{
   deployed_url: null,
   github_url:"https://github.com/yiyuchen-nz/aplus-budget-calendar",
   category: ['React', "JavaScript"],
-  key_techs: ["React Router", "JavaScript"]
+  key_techs: ["React", "JavaScript"]
 }
 ]

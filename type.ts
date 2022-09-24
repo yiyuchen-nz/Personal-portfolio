@@ -5,11 +5,6 @@ export interface IService{
   Icon: IconType,
 }
 
-export interface ISkill{
-  name: string,
-  level:string,
-  Icon: IconType
-}
 
 export interface IProject{
   id:number

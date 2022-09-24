@@ -14,18 +14,16 @@ const index = () => {
     initial="initial"
     animate="animate"
     exit="exit"
-    className='flex flex-col flex-grow px-6 pt-1 dark:bg-black'>
+    className='flex flex-col flex-grow px-6 pt-3 dark:bg-black'>
 
         <h5 className='my-2 font-medium'>
          Hello! I am so glad you are here. 
          <br/>
-         My name is Yiyu. I am a software developer, previously English teacher. I recently graduated from the web development bootcamp of Dev Academy. 
-         <br/>
-         I love to make fun, user-friendly and delightful tools for people all across the world :-)
+         My name is Yiyu. I am a software developer, previously English teacher, and a cat and coffee lover. I recently graduated from the web development bootcamp of Dev Academy. I love to make simple, user-friendly and fun tools for people all across the world :-)
         </h5>
 
         <div className='flex-grow p-4 mt-5 bg-blue dark:bg-black dark:text-butter' style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
-          <h6 className='my-3 text-xl font-bold tracking-wide'>What I offer</h6>
+          <h6 className='my-3 text-xl font-bold tracking-wide'>My Skills</h6>
 
           <motion.div 
           className='grid gap-6 lg:grid-cols-2'

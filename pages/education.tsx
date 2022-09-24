@@ -1,5 +1,5 @@
 import {motion } from "framer-motion"
-import {routeAnimation, fadeInUp} from "../animations"
+import {routeAnimation, fadeInUp, stagger} from "../animations"
 
 const Education = () => {
   return (
@@ -12,9 +12,13 @@ const Education = () => {
     > 
     
     {/* education */}
-    <motion.div  className="grid gap-2 md:grid-rows-3 text-butter">
+    <motion.div    
+    variants={stagger}
+    initial="initial"
+    animate="animate"
+    className="grid gap-5 md:grid-flow-row-dense text-butter">
       
-      <motion.div variants={fadeInUp} className="px-3 bg-blue">
+      <motion.div variants={fadeInUp} className="px-3 bg-blue rounded-2xl dark:bg-gray-800">
         <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
           Web Development Bootcamp
           </motion.h5>
@@ -22,28 +26,25 @@ const Education = () => {
             Dev Academy Aotearoa
           </motion.h5>
           <motion.p className="text-xs">April 2022- July 2022</motion.p>
-          <motion.p className="my-1 text-sm">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
+          <motion.p className="my-2 ">This was a 15 week full immersion software development bootcamp that mimics a real-life development team as closely as possible. The course taught us a modern web dev stack with a strong emphasis on human skills, empathy, collaboration, and working in teams using agile methodology. Everyday </motion.p>
       </motion.div>
 
-      <motion.div variants={fadeInUp} className="px-3 bg-blue">
+      <motion.div variants={fadeInUp} className="px-3 bg-blue rounded-2xl dark:bg-gray-800">
         <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
           Postgraduate Diploma in International Hospitality Management
           </motion.h5>
           <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
             AUT
           </motion.h5>
-          <motion.p className="text-xs">February 2016- November 2016</motion.p>
-          <motion.p className="my-3 text-sm">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
       </motion.div>
 
-      <motion.div variants={fadeInUp} className="px-3 bg-blue">
+      <motion.div variants={fadeInUp} className="px-3 bg-blue rounded-2xl dark:bg-gray-800">
         <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
           Bachelor of Engineering
           </motion.h5>
           <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
-            Tianjin University of Technology
+            Tianjin University of Technology, China
           </motion.h5>
-          <motion.p className="my-3 text-sm">What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing. What i am doing.</motion.p>
       </motion.div>
 
     </motion.div>
