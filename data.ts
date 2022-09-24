@@ -83,25 +83,25 @@ export const projects:IProject[]= [{
   deployed_url: "https://dev-who.herokuapp.com",
   github_url:"https://github.com/yiyuchen-nz/dev-who",
   category: ['JavaScript'],
-  key_techs: ["Javascript", "Handlebars"]
+  key_techs: ["JavaScript", "Handlebars"]
 },
 {
   id:3,
-  name: "Dev invaders",
+  name: "Sweet As Yoga",
   description:"This was the final project of boot camp.",
-  image_path: "/images/smiling-spaceship.png",
-  deployed_url: "https://yiyuchen-nz.github.io/dev-invaders/",
-  github_url:"https://github.com/yiyuchen-nz/dev-invaders",
-  category: ['React'],
-  key_techs: ["phaser3", "Javascript"]
+  image_path: "/images/sweetAsYoga.jpg",
+  deployed_url: null,
+  github_url:"https://github.com/yiyuchen-nz/sweet-as-yoga",
+  category: ['React', "JavaScript", "REST API"],
+  key_techs: ["React", "JavaScript", "REST API"]
 },{
   id:4,
-  name: "Dev invaders",
+  name: "A+ Budget Calendar",
   description:"This was the final project of boot camp.",
-  image_path: "/images/smiling-spaceship.png",
-  deployed_url: "https://yiyuchen-nz.github.io/dev-invaders/",
-  github_url:"https://github.com/yiyuchen-nz/dev-invaders",
+  image_path: "/images/budgetCalendar.jpg",
+  deployed_url: null,
+  github_url:"https://github.com/yiyuchen-nz/aplus-budget-calendar",
   category: ['React'],
-  key_techs: ["phaser3", "Javascript"]
+  key_techs: ["React Router", "JavaScript"]
 }
 ]

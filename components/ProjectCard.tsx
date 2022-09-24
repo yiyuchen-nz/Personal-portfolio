@@ -54,9 +54,11 @@ const ProjectCard:FunctionComponent<{
           <a href={github_url}className="flex px-4 py-2 space-x-3 text-md text-butter item-center dark:bg-black">
            <AiFillGithub className="w-6 h-6"/> <span>Github</span>
           </a>
+          {  deployed_url !== null &&
           <a href={deployed_url}className="flex px-4 py-2 space-x-3 text-md item-center dark:bg-black">
             <AiFillProject className="w-6 h-6"/> <span>Project</span>
           </a>
+          }     
           </motion.div> 
         </motion.div>
 
