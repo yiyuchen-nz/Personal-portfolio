@@ -6,7 +6,7 @@ export const services:IService[] = [
 
   {
     title:"Frontend Development",
-    about:"I can build SPA using HTML, CSS( and Tailwind) and React js",
+    about:"<br/>I can build SPA using HTML, CSS( and Tailwind) and React js",
     Icon: RiComputerLine,
   },
   {
@@ -83,7 +83,7 @@ export const projects:IProject[]= [{
   name: "Personal Portfolio",
   description:"This is my solo project --- my personal portfolio. ",
   image_path: "/images/portfolio.jpg",
-  deployed_url: null,
+  deployed_url: "https://yiyu-personal-portfolio.vercel.app/",
   github_url:"https://github.com/yiyuchen-nz/Personal-portfolio",
   category: ['React', "TypeScript"],
   key_techs: ["React", "Next js", "Tailwind","TypeScript"]
