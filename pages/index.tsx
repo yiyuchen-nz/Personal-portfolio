@@ -19,7 +19,7 @@ const index = () => {
         <h5 className='my-2 font-medium'>
          Hello! I am so glad you are here. 
          <br/>
-         My name is Yiyu. I am a software developer, previously English teacher, and a cat and coffee lover. I recently graduated from the web development bootcamp of Dev Academy. I love to make simple, user-friendly and fun tools for people all across the world :-)
+         My name is Yiyu. I am a software developer, previously an English teacher, and a cat and coffee lover. I recently graduated from the web development bootcamp of Dev Academy. I love to make simple, user-friendly and fun tools for people all across the world :-)
         </h5>
 
         <div className='flex-grow p-4 mt-5 bg-blue dark:bg-black dark:text-butter' style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>

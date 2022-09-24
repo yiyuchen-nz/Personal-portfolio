@@ -42,8 +42,8 @@ const Sidebar = () => {
         </div>
        {/* CV  */}
        <div className="flex items-center justify-center px-2 py-1 my-4 rounded-full bg-blue text-butter dark:bg-gray-800">
-      <a href="/images/smiling-spaceship.png"
-      download="smiling-spaceship.png">
+      <a href="/yiyu_chen_resume.pdf"
+      download="yiyu_chen_resume.pdf">
         Download Resume
         </a>
         </div>

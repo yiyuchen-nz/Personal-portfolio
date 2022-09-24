@@ -35,7 +35,7 @@ const ProjectCard:FunctionComponent<{
       <Image src={image_path} alt={name} className="cursor-pointer" onClick={()=>setShowDetail(id)} width="300" height="200" layout="responsive"/>
       <p className="my-2 text-center" >{name}</p>
 { showDetail === id && (
-      <div className="absolute top-0 left-0 z-10 grid w-full h-auto grid-cols-2 p-2 rounded-lg md:p-10 md:grid-cols-2 md: gap-x-12 text-butter bg-blue dark:bg-black">
+      <div className="absolute top-0 left-0 z-10 grid w-full h-auto grid-cols-2 p-2 rounded-lg md:p-10 md:grid-cols-2 md: gap-x-12 text-butter bg-blue dark:bg-gray-800">
 
         <motion.div 
         variants={stagger}

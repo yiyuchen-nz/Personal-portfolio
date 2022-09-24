@@ -6,33 +6,33 @@ export const services:IService[] = [
 
   {
     title:"Frontend Development",
-    about:"I can build SPA with HTML, CSS and React js.",
+    about:"I can build SPA using HTML, CSS( and Tailwind) and React js",
     Icon: RiComputerLine,
   },
   {
-    title:"Communication Skills",
-    about:"Hellooo!!!",
+    title:"Communication Skills and Team Player",
+    about:"I have a friendly nature with active listening, sharing feedback skills",
     Icon: BsSuitHeartFill,
   },
   {
     title:"Backend Development",
-    about:"I have experience with data handling Express.js",
+    about:"I have experience handling data and server with knex and Express",
     Icon: RiComputerLine,
   },
   {
-    title:"Curious and fast learner",
-    about:"Learned Phaser3 to build a 2D game in 7 days",
+    title:"Curious and Fast Learner",
+    about:"Learned Phaser3 to build a 2D game in 7 days for my final group project",
     Icon: BsSuitHeartFill,
   },
   {
-    title:"API Development",
-    about:"Hellooo!!!",
+    title:"UI/UX Design",
+    about:"I have experience designing interface using Figma and Framer Motion",
     Icon: RiComputerLine,
   },
 
   {
-    title:"Team Player",
-    about:"Hellooo!!!",
+    title:"Keep Calm and Carry On",
+    about:"I've often been appreciated for staying calm and work well under stress",
     Icon: BsSuitHeartFill,
   },
 
@@ -77,5 +77,15 @@ export const projects:IProject[]= [{
   github_url:"https://github.com/yiyuchen-nz/aplus-budget-calendar",
   category: ['React', "JavaScript"],
   key_techs: ["React", "JavaScript"]
+},
+{
+  id:5,
+  name: "Personal Portfolio",
+  description:"This is my solo project --- my personal portfolio. ",
+  image_path: "/images/portfolio.jpg",
+  deployed_url: null,
+  github_url:"https://github.com/yiyuchen-nz/Personal-portfolio",
+  category: ['React', "TypeScript"],
+  key_techs: ["React", "Next js", "Tailwind","TypeScript"]
 }
 ]

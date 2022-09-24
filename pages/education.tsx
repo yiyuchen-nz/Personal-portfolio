@@ -18,7 +18,7 @@ const Education = () => {
     animate="animate"
     className="grid gap-5 md:grid-flow-row-dense text-butter">
       
-      <motion.div variants={fadeInUp} className="px-3 bg-blue rounded-2xl dark:bg-gray-800">
+      <motion.div variants={fadeInUp} className="px-3 pb-2 bg-blue rounded-2xl dark:bg-gray-800">
         <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
           Web Development Bootcamp
           </motion.h5>
@@ -26,10 +26,11 @@ const Education = () => {
             Dev Academy Aotearoa
           </motion.h5>
           <motion.p className="text-xs">April 2022- July 2022</motion.p>
-          <motion.p className="my-2 ">This was a 15 week full immersion software development bootcamp that mimics a real-life development team as closely as possible. The course taught us a modern web dev stack with a strong emphasis on human skills, empathy, collaboration, and working in teams using agile methodology. Everyday </motion.p>
+          <motion.p className="my-2 ">This was a 15 week intensive and full immersion software development bootcamp that mimics a real-life development team as closely as possible. The course taught us a modern web dev stack with a strong emphasis on human skills, empathy, collaboration, and working in teams using agile methodology.  </motion.p>
+          <motion.p></motion.p>
       </motion.div>
 
-      <motion.div variants={fadeInUp} className="px-3 bg-blue rounded-2xl dark:bg-gray-800">
+      <motion.div variants={fadeInUp} className="px-3 pb-2 bg-blue rounded-2xl dark:bg-gray-800">
         <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
           Postgraduate Diploma in International Hospitality Management
           </motion.h5>
@@ -38,7 +39,7 @@ const Education = () => {
           </motion.h5>
       </motion.div>
 
-      <motion.div variants={fadeInUp} className="px-3 bg-blue rounded-2xl dark:bg-gray-800">
+      <motion.div variants={fadeInUp} className="px-3 pb-2 bg-blue rounded-2xl dark:bg-gray-800">
         <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
           Bachelor of Engineering
           </motion.h5>
