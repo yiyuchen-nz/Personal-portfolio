@@ -6,7 +6,7 @@ import{motion} from"framer-motion"
 import { fadeInUp, stagger,routeAnimation } from '../animations';
 
 
-const index = () => { 
+const Skills = () => { 
   
   return(
     <motion.div 
@@ -42,4 +42,4 @@ const index = () => {
     </motion.div>
   ) 
 }
-export default index  
+export default Skills 

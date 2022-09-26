@@ -4,7 +4,6 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 
 import{useTheme}from "next-themes"
-import{ BsToggleOff}from"react-icons/bs"
 
 const NavItem: FunctionComponent<{
   activeItem:string,
