@@ -47,7 +47,7 @@ const Topbar = () => {
          I recently graduated from the web development bootcamp of Dev Academy. 
          I love building fun, simple and user-friendly tools for people all across the world.
          <br/>
-         I am currently looking for a new role as a developer. Please feel free to contact me. Let's chat over coffee:-)
+         I am currently looking for a new role as a developer. Please feel free to contact me. Let&apos;s chat over coffee:-)
         </h5>
       </div>
     </div>
