@@ -16,17 +16,17 @@ const index = () => {
     exit="exit"
     className='flex flex-col flex-grow px-6 pt-1 dark:bg-black'>
 
-        <h5 className='my-2 font-medium text-justify'>
-         Hello! I am so glad you are here. 
-         <br/>
-         My name is Yiyu. I am a software developer, previously an English teacher, and a cat and coffee lover. I recently graduated from the web development bootcamp of Dev Academy. I love to make simple, user-friendly and fun tools for people all across the world :-)
+        <h5 className='px-6 py-6 font-medium text-justify'>
+          Prior to my career changing journey to become a developer, I was an English teacher for 3 years. I enjoy helping students with my knowledge and experience. Being a developer, I can build tools to help people across the world. How cool is that! This idea really excited me.
+          <br/>
+          Here I list some of the skills that I bring with me from my previous experience and my current learnings.
         </h5>
 
-        <div className='flex-grow px-4 py-5 pb-4 mt-5 bg-blue dark:bg-black dark:text-butter' style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
+        <div className='flex-grow px-4 py-5 pb-4 mt-5 mb-10 bg-blue dark:bg-black dark:text-butter' style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
     
 
           <motion.div 
-          className='grid gap-4 lg:grid-cols-2'
+          className='grid gap-5 lg:grid-cols-2'
           variants={stagger}
           initial="initial"
           animate="animate">

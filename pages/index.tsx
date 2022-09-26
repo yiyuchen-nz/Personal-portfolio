@@ -1,7 +1,7 @@
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import{GoLocation} from "react-icons/go"
 import{AiOutlineMail}from"react-icons/ai"
-import{BsFillCloudDownloadFill} from "react-icons/bs"
+
 
 
 import Image from "next/image"
@@ -10,7 +10,7 @@ const Topbar = () => {
 
 
   return (
-    <div  className='grid gap-4 md:grid-cols-3 lg:grid-cols-3' >
+    <div  className='grid gap-4 pb-10 md:grid-cols-3 lg:grid-cols-3' >
 
       <div className="flex flex-col items-center my-10 mx-9">
         <Image src="/images/profile.jpg" alt="profile picture" className="w-32 h-auto mx-auto rounded-full" layout="intrinsic" height="250" width="250"/>
