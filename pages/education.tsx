@@ -16,7 +16,7 @@ const Education = () => {
     variants={stagger}
     initial="initial"
     animate="animate"
-    className="grid gap-5 md:grid-flow-row-dense text-butter">
+    className="grid gap-6 py-10 md:grid-flow-row-dense text-butter">
       
       <motion.div variants={fadeInUp} className="px-3 pb-2 bg-blue rounded-2xl dark:bg-gray-800">
         <motion.h5 variants={fadeInUp} className="my-2 text-lg font-bold">
@@ -25,7 +25,6 @@ const Education = () => {
           <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
             Dev Academy Aotearoa
           </motion.h5>
-          <motion.p className="text-xs">April 2022- July 2022</motion.p>
           <motion.p className="my-2 ">This was a 15 week intensive and full immersion software development bootcamp that mimics a real-life development team as closely as possible. The course taught us a modern web dev stack with a strong emphasis on human skills, empathy, collaboration, and working in teams using agile methodology.  </motion.p>
           <motion.p></motion.p>
       </motion.div>

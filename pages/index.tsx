@@ -1,45 +1,54 @@
-//import { GetServerSidePropsContext } from 'next'; 
-import ServiceCard from '../components/ServiceCard';
-import {services}from'../data'
-
-import{motion} from"framer-motion"
-import { fadeInUp, stagger,routeAnimation } from '../animations';
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
+import{GoLocation} from "react-icons/go"
+import{AiOutlineMail}from"react-icons/ai"
+import{BsFillCloudDownloadFill} from "react-icons/bs"
 
 
-const index = () => { 
-  
-  return(
-    <motion.div 
-    variants={routeAnimation}
-    initial="initial"
-    animate="animate"
-    exit="exit"
-    className='flex flex-col flex-grow px-6 pt-1 dark:bg-black'>
+import Image from "next/image"
 
-        <h5 className='my-2 font-medium'>
+const Topbar = () => {
+
+
+  return (
+    <div  className='flex flex-row-2' >
+
+      <div className="flex flex-col my-10 mx-9">
+        <Image src="/images/profile.jpg" alt="profile picture" className="w-32 h-auto mx-auto rounded-full" layout="intrinsic" height="250" width="250"/>
+        <h3 className="flex items-center gap-3 my-2 space-x-2 text-3xl font-medium tracking-wider font-Poppins">
+          <span className="font-bold text-darkBlue">Yiyu </span>
+          Chen
+        </h3>
+        {/* title & location */}
+        <div className="flex items-center mt-1 space-x-2">
+          <span>Software Developer</span>
+        </div>
+
+        <div className="flex mt-3 space-x-2 ">
+          <GoLocation className="w-4 h-4"/>
+          <span>Auckland, NZ</span>
+        </div>
+
+          {/*  email and social icons */}   
+          <div className="flex flex-row my-8 space-x-5 text-blue md:w-full dark:text-butter">
+          <a href="https://github.com/yiyuchen-nz"><AiFillGithub className="w-8 h-8 cursor-pointer"/></a>
+          <a href="https://www.linkedin.com/in/yiyuchen-nz/"><AiFillLinkedin className="w-8 h-8 cursor-pointer"/></a>
+          <button onClick={()=>window.open('mailto: yiyuchen9@gmail.com')}>
+          <AiOutlineMail className="w-8 h-8" />
+         </button>
+         </div>
+ 
+
+      </div>
+      
+      <div>
+      <h5 className='mx-10 my-10 font-medium text-justify'>
          Hello! I am so glad you are here. 
          <br/>
          My name is Yiyu. I am a software developer, previously an English teacher, and a cat and coffee lover. I recently graduated from the web development bootcamp of Dev Academy. I love to make simple, user-friendly and fun tools for people all across the world :-)
         </h5>
-
-        <div className='flex-grow px-4 pb-4 mt-5 bg-blue dark:bg-black dark:text-butter' style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
-          <h6 className='my-3 text-xl font-bold tracking-wide'>My Skills</h6>
-
-          <motion.div 
-          className='grid gap-4 lg:grid-cols-2'
-          variants={stagger}
-          initial="initial"
-          animate="animate">
-            {services.map((service,idx)=>(
-               <motion.div
-               variants={fadeInUp}
-                className='rounded-sm bg-butter lg:col-span-1 dark:bg-black dark:text-butter' key={idx}>
-            <ServiceCard service={service}/>
-            </motion.div>
-            ))}
-          </motion.div>
-        </div>
-    </motion.div>
-  ) 
+      </div>
+    </div>
+  )
 }
-export default index  
+
+export default Topbar
