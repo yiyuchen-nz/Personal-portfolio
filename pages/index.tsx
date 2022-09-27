@@ -49,7 +49,7 @@ const index = () => {
       <motion.div variants={stagger}
         initial="initial"
         animate="animate" className="md:col-span-2 lg:col-span-2'">
-      <motion.h5 variants={fadeInUp} className='pt-16 pl-10 pr-16 leading-8 text-justify font-Poppins'>
+      <motion.h5 variants={fadeInUp} className='pt-16 pl-10 pr-16 text-xs text-center sm:text-lg sm:leading-8 md:text-justify font-Poppins'>
          <span style={{color:'#285880', fontSize:"50px"}}>Hello! </span>I am so glad you are here. 
          <br/>
          <br/>

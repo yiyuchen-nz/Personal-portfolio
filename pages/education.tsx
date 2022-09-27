@@ -25,8 +25,13 @@ const Education = () => {
           <motion.h5 variants={fadeInUp} className="my-2 font-semibold ">
             Dev Academy Aotearoa
           </motion.h5>
-          <motion.p className="my-2 ">This was a 15 week intensive and full immersion software development bootcamp that mimics a real-life development team as closely as possible. The course taught us a modern web dev stack with a strong emphasis on human skills, empathy, collaboration, and working in teams using agile methodology.  </motion.p>
-          <motion.p></motion.p>
+          <motion.p className="my-2 ">
+            <ol className="ml-3 list-disc">
+              <li>It was a 15 week intensive web development bootcamp</li>
+              <li>I spent about 800 hours in coding and learning modern web development tools</li>
+              <li>The bootcamp mimics a real-life development team as closely as possible. From one-day Friday Projects to multiple days projects, we used Agile approach to work in a team, and practiced source control and worked in a large code base from all the projects in bootcamp.</li>
+            </ol>
+          </motion.p>
       </motion.div>
 
       <motion.div variants={fadeInUp} className="px-3 pb-2 bg-blue rounded-2xl dark:bg-gray-800">
