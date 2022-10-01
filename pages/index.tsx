@@ -10,11 +10,13 @@ const index = () => {
 
 
   return (
+    
     <motion.div 
     variants={routeAnimation}
     initial="initial"
     animate="animate"
     exit="exit" className='grid gap-4 pb-10 md:grid-cols-3 lg:grid-cols-3' >
+
 
       <motion.div 
         variants={stagger}
@@ -49,6 +51,7 @@ const index = () => {
       <motion.div variants={stagger}
         initial="initial"
         animate="animate" className="md:col-span-2 lg:col-span-2'">
+   
       <motion.h5 variants={fadeInUp} className='pt-16 pl-10 pr-16 text-xs text-center sm:text-lg sm:leading-8 md:text-justify font-Poppins'>
          <span style={{color:'#285880', fontSize:"50px"}}>Hello! </span>I am so glad you are here. 
          <br/>
@@ -65,3 +68,12 @@ const index = () => {
 }
 
 export default index
+
+// clouds
+// <div  id="clouds">
+// <div className="cloud x1"></div>
+// <div className="cloud x2"></div>
+// <div className="cloud x3"></div>
+// <div className="cloud x4"></div>
+// <div className="cloud x5"></div>
+// </div>
